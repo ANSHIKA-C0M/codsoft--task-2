@@ -9,13 +9,13 @@ class TodoListApp:
       
         self.tasks = []
         
-        self.task_entry = tk.Entry(root, width=30)
-        self.task_entry.pack(pady=10)
+        self.task_entry = tk.Entry(root, width=50)
+        self.task_entry.pack(pady=20)
       
         add_button = tk.Button(root, text="Add Task", command=self.add_task)
         add_button.pack()
-        self.task_listbox = tk.Listbox(root, width=40, height=10)
-        self.task_listbox.pack(pady=10)
+        self.task_listbox = tk.Listbox(root, width=60, height=20)
+        self.task_listbox.pack(pady=20)
         
         remove_button = tk.Button(root, text="Remove Task", command=self.remove_task)
         remove_button.pack()
